@@ -1,58 +1,74 @@
- *{
-    margin: 0;
-    padding: 0;
+*{
+   margin: 0;
+   padding: 0;
+}
+body {
+   background: #262626;
+}
+.collapse{
+   color: #fff;
+   font-size: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding-top: 5px;
+   margin-bottom: 10px;
+  
+}
+.navbar-brand{
+  color:#fff;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 5px;
+  float: left;
+  padding-top: 10px;
+}
+
+nav ul {
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+nav ul li {
+   padding: 25px 40px;
+}
+nav ul li a {
+   text-decoration: none;
+   font-size: 40px;
+   color: #fff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 10px;
+}
+nav ul li:hover {
+   background-color: #2f948d;
+   transition: 0.9s;
+}
+@media only screen and (max-width: 767px) {
+   nav ul {
+       height: 230px;
+       flex-direction: column;
+       text-align: center;
+       width: 100%;
+   }
+}
+.footer {
+   color: #fff;
+   text-align: left;
+   font-size: 15px;
+   padding: 10px;
+   font-style: italic;
  }
- body {
-    background: #262626;
- }
- nav {
-    background-color: #015d56;
- }
- nav ul {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    list-style: none;
- }
- nav ul li {
-    padding: 25px 40px;
- }
- nav ul li a {
-    text-decoration: none;
-    font-size: 40px;
+.footer i {
+    font-size: 20px;   
     color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 20px;
- }
- nav ul li:hover {
-    background-color: #2f948d;
-    transition: 0.9s;
- }
- @media only screen and (max-width: 767px) {
-    nav ul {
-        height: 230px;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-    }
- }
- .footer {
-    background-color: #015d56;
-    color: #fff;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px;
     font-style: italic;
-  }
- .footer i {
-     font-size: 20px;   
-     color: #fff;
-     font-style: italic;
+}
+h2 {
+   color:#fff;
+   text-align: left;
+   font-size: 30px;
+   padding: 20px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
  }
- h1 {
-    color:#fff;
-    text-align: center;
-    font-size: 30px;
-    padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+.material-icons{
+   color:#fff
+}

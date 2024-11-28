@@ -3,25 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Group One</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+    <title>Responsive Sidebar Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-   <div>
-       <nav>
-          <ul>
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Services</a></li>
-             <li><a href="#">Contact</a></li>
-           </ul>
-       </nav>
-   </div>
-   <h1>Group One Web Page!</h1>
+   <!-- Navbar Setup -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <div class="container-fluid">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">
+                GroupOne
+            </a>
+            <!-- Navbar toggle button -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="offcanvas" 
+                    data-bs-target="#sidebar"
+                aria-controls="sidebar">
+                <i class="material-icons">menu</i>
+            </button>
+            <!-- Top menu in navbar -->
+            <div class="collapse navbar-collapse" 
+                 id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li>
+                        <a class="nav-link active text-light" 
+                           aria-current="page" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-light" href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-light" href="#">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar Setup -->
+    <div class="offcanvas offcanvas-start" 
+         tabindex="-1" id="sidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-success">MENU</h5>
+            <button type="button" 
+            class="btn-close text-reset" 
+                    data-bs-dismiss="offcanvas" 
+                    aria-label="Close">
+            </button>
+        </div>
+        <div class="offcanvas-body bg-success">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <i class="material-icons">home</i>
+                    <a class="nav-link text-light" href="#">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item"><i class="material-icons">info</i>
+                    <a class="nav-link text-light" href="#">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item"><i class="material-icons">phone</i>
+                    <a class="nav-link text-light" href="#">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content Below Navbar and Sidebar Menu -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- First column for content -->
+            <div class="col-lg-6">
+                <h2>Group One Web Page!</h2>
+            </div>
+            <!-- Second column for content -->
+            <div class="col-lg-6">
+                <img src="https://media.gettyimages.com/id/482150715/photo/women-laughing-together-on-urban-rooftop.jpg?s=2048x2048&w=gi&k=20&c=T4mqhZCka5z8F_QUndtAH4C1UVjEg8xqTHSHTqIJ2xY="
+                    class="img-fluid my-2">
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <p><i class="material-icons">copyright</i>Group One, Open Book Assignment,Cohort lV.All rights  reserved.</p>
     </div>
+
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
